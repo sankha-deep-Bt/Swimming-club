@@ -1,6 +1,6 @@
 export default function Testimonial() {
   return (
-    <section className="relative h-162.5w-full overflow-hidden">
+    <section className="relative h-162.5 w-full overflow-hidden">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
