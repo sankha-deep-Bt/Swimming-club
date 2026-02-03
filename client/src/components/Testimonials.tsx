@@ -35,9 +35,6 @@ export default function Testimonial() {
           </div>
         </div>
       </div>
-
-      {/* Slanted bottom shape */}
-      <div className="absolute bottom-0 left-0 h-32 w-full bg-white [clip-path:polygon(0_60%,100%_100%,0_100%)]" />
     </section>
   );
 }
