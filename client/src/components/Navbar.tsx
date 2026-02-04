@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -18,15 +19,23 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <ul className="hidden items-center gap-8 text-sm font-medium text-white md:flex">
-          <li className="cursor-pointer hover:text-cyan-300">Home</li>
+          <Link to="/">
+            <li className="cursor-pointer hover:text-cyan-300">Home</li>
+          </Link>
 
           <li className="flex cursor-pointer items-center gap-1 hover:text-cyan-300">
             Our Facilities <ChevronDown size={14} />
           </li>
 
-          <li className="cursor-pointer hover:text-cyan-300">Notice Board</li>
-          <li className="cursor-pointer hover:text-cyan-300">Gallery</li>
-          <li className="cursor-pointer hover:text-cyan-300">Contact</li>
+          <Link to="/noticeboard">
+            <li className="cursor-pointer hover:text-cyan-300">Notice Board</li>
+          </Link>
+          <Link to="/gallery">
+            <li className="cursor-pointer hover:text-cyan-300">Gallery</li>
+          </Link>
+          <Link to="/contact">
+            <li className="cursor-pointer hover:text-cyan-300">Contact</li>
+          </Link>
         </ul>
 
         {/* Mobile Hamburger */}
@@ -45,15 +54,23 @@ export default function Navbar() {
         ${open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
       >
         <ul className="flex flex-col gap-4 bg-[#003d5b]/95 px-6 py-6 text-sm font-medium text-white">
-          <li className="cursor-pointer hover:text-cyan-300">Home</li>
+          <Link to="/">
+            <li className="cursor-pointer hover:text-cyan-300">Home</li>
+          </Link>
 
-          <li className="flex items-center gap-1 cursor-pointer hover:text-cyan-300">
+          <li className="flex cursor-pointer items-center gap-1 hover:text-cyan-300">
             Our Facilities <ChevronDown size={14} />
           </li>
 
-          <li className="cursor-pointer hover:text-cyan-300">Notice Board</li>
-          <li className="cursor-pointer hover:text-cyan-300">Gallery</li>
-          <li className="cursor-pointer hover:text-cyan-300">Contact</li>
+          <Link to="/noticeboard">
+            <li className="cursor-pointer hover:text-cyan-300">Notice Board</li>
+          </Link>
+          <Link to="/gallery">
+            <li className="cursor-pointer hover:text-cyan-300">Gallery</li>
+          </Link>
+          <Link to="/contact">
+            <li className="cursor-pointer hover:text-cyan-300">Contact</li>
+          </Link>
         </ul>
       </div>
     </header>
