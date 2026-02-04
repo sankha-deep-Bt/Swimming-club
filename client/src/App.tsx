@@ -1,21 +1,23 @@
 import "./App.css";
-import AboutUs from "./components/AboutUs";
-import Equipments from "./components/Equipments";
-import Facilities from "./components/Facilities";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
-import Header from "./components/Header";
-import Testimonials from "./components/Testimonials";
+import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
+
+import GalleryPage from "./pages/GalleryPage";
+import Swimming from "./pages/SwimmingPage";
 
 function App() {
   return (
     <>
-      <Header />
-      <AboutUs />
-      <Facilities />
-      <Equipments />
-      <Gallery />
-      <Testimonials />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/swimming" element={<Swimming />} />
+      </Routes>
       <Footer />
     </>
   );
