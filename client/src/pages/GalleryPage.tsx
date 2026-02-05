@@ -22,6 +22,8 @@
 //     "/gallery/20.jpg",
 //   ];
 
+import Navbar from "../components/Navbar";
+
 //   return (
 //     <section className="bg-[#eef9fa] py-16">
 //       <div className="mx-auto max-w-7xl px-6">
@@ -71,7 +73,7 @@ export default function GalleryPage() {
 
   return (
     <section className="min-h-screen bg-[#eef9fa] py-16">
-      <div className="mx-auto max-w-350 px-4 md:px-6">
+      <div className="mx-auto max-w-7xl px-4 md:px-6">
         {/* Masonry layout */}
         <div className="columns-1 gap-4 sm:columns-2 md:columns-3 lg:columns-4">
           {images.map((src, index) => (

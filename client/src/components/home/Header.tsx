@@ -2,11 +2,10 @@ import Navbar from "../Navbar";
 
 export default function Header() {
   return (
-    // <section className="relative h-screen w-full overflow-hidden">
-    <section className="relative h-[60vh] w-full overflow-hidden sm:h-screen">
+    <section className="relative h-[60vh] w-full overflow-hidden md:h-[125vh]">
       {/* Navbar */}
       <div className="relative z-20">
-        <Navbar variant="image" />
+        <Navbar />
       </div>
 
       {/* Background Image */}
@@ -20,9 +19,9 @@ export default function Header() {
 
       {/* Content */}
       <div className="relative z-10 flex h-full ">
-        <div className="mx-auto w-full max-w-6xl px-6">
-          <div className="max-w-xl md:ml-32 lg:ml-40">
-            <h1 className="mt-20 text-4xl font-bold leading-tight text-orange-400 md:text-8xl">
+        <div className="mx-auto w-full px-6">
+          <div className="max-w-4xl md:ml-32 lg:ml-40">
+            <h1 className="mt-20 text-6xl font-bold leading-tight text-orange-400 md:text-9xl">
               MIDNAPORE
               <br />
               SWIMMING

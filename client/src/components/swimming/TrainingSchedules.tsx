@@ -9,10 +9,10 @@ const Card = ({ title, subtitle, times, image, height = "h-[420px]" }: any) => {
 
       {/* content */}
       <div className="relative z-10 p-6 text-white">
-        <h3 className="text-xl font-bold text-black mb-2">{title}</h3>
-        {subtitle && <p className="text-sm font-semibold mb-4">{subtitle}</p>}
+        <h3 className="text-2xl font-bold text-black mb-2">{title}</h3>
+        {subtitle && <p className="text-md font-bold mb-4">{subtitle}</p>}
 
-        <div className="space-y-2 text-sm font-semibold">
+        <div className="space-y-2 text-md font-bold">
           {times.map((t: string, i: number) => (
             <p key={i}>{t}</p>
           ))}
@@ -22,36 +22,14 @@ const Card = ({ title, subtitle, times, image, height = "h-[420px]" }: any) => {
   );
 };
 
-// const Card = ({ title, subtitle, times, image, height = "h-[380px]" }: any) => {
-//   return (
-//     <div
-//       className={`relative ${height} rounded-2xl overflow-hidden bg-center bg-no-repeat bg-cover`}
-//       style={{ backgroundImage: `url(${image})` }}
-//     >
-//       <div className="absolute inset-0 bg-blue-900/70" />
-
-//       <div className="relative z-10 h-full flex flex-col justify-center px-8 text-white">
-//         <h3 className="text-xl font-bold text-black mb-2">{title}</h3>
-
-//         {subtitle && <p className="text-sm font-semibold mb-4">{subtitle}</p>}
-
-//         <div className="space-y-2 text-sm font-semibold">
-//           {times.map((t: string, i: number) => (
-//             <p key={i}>{t}</p>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
 export default function TrainingSchedules() {
   return (
-    <section className="mx-auto max-w-4xl px-8 lg:px-16 py-16">
+    <section className="mx-auto max-w-7xl px-8 lg:px-16 py-16">
       {/* heading */}
-      <h2 className="text-3xl font-bold tracking-wide mb-12">
+      <h2 className="text-4xl font-bold tracking-wide mb-4">
         TRAINING SCHEDULES
       </h2>
+      <div className="h-0.5 w-20 bg-blue-300 mb-12" />
 
       {/* ROW 1 */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">

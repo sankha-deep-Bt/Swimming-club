@@ -3,9 +3,9 @@ import { ChevronLeft } from "lucide-react";
 export default function Gallery() {
   return (
     <section className="relative w-full overflow-hidden bg-[#4f7fc3] py-16 md:py-24">
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-8xl px-6">
         <div className="mb-10 md:ml-32 lg:ml-40">
-          <h3 className="text-3xl font-bold uppercase text-white md:text-4xl">
+          <h3 className="text-3xl font-bold uppercase text-white md:text-7xl">
             GALLERY
           </h3>
           <div className="mt-3 h-0.5 w-14 bg-emerald-400" />

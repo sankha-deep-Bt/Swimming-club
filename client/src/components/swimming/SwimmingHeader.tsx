@@ -33,7 +33,7 @@ const SwimmingHeader = () => {
           {/* Right Side: The Swimmer in Red Circle */}
           <div className="relative flex justify-center items-center w-full md:w-1/2">
             {/* The Big Red Ring */}
-            <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full border-30 md:border-50 border-[#ff3d2e] flex items-center justify-center">
+            <div className="relative w-64 h-64 md:h-100 md:w-100 rounded-full border-30 md:border-70 border-[#ff3d2e] flex items-center justify-center">
               {/* Swimmer Image - Masked/Overflowing */}
               <img
                 src="swimmer.webp"
