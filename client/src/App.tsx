@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 
 import GalleryPage from "./pages/GalleryPage";
 import Swimming from "./pages/SwimmingPage";
+import GymPage from "./pages/GymPage";
+import NoticeBoard from "./pages/NoticeBoard";
 
 function App() {
   return (
@@ -14,9 +16,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/gym" element={<GymPage />} />
+        <Route path="/swimming" element={<Swimming />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<GalleryPage />} />
-        <Route path="/swimming" element={<Swimming />} />
+        <Route path="/noticeboard" element={<NoticeBoard />} />
       </Routes>
       <Footer />
     </>

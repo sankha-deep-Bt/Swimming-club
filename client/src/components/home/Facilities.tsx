@@ -16,26 +16,28 @@ export default function Facilities() {
           icon={<Waves size={44} />}
           title="SWIMMING POOL"
           text="A one stop destination of aquatic talents. Our students went to domestic as well as State competition."
-          bgImage="/images/swimming.jpg"
+          frontImage="/gallery/gallery-4.jpg"
+          backImage="/gallery/gallery-5.jpg"
         />
 
         <FlipCard
           icon={<Dumbbell size={44} />}
           title="GYM"
           text="A state of the art facility where people can train, do weight management and work on their physique."
-          bgImage="/images/gym.jpg"
+          frontImage="/gallery/gallery-10.jpeg"
+          backImage="/gallery/gallery-10.jpeg"
         />
       </div>
     </section>
   );
 }
 
-function FlipCard({ icon, title, text, bgImage }: any) {
+function FlipCard({ icon, title, text, frontImage, backImage }: any) {
   const [flipped, setFlipped] = useState(false);
 
   return (
     <div
-      className="h-72 md:h-60 perspective-distant"
+      className="h-72 md:h-60 perspective-distant cursor-pointer"
       onClick={() => setFlipped((prev) => !prev)}
     >
       <div
@@ -47,31 +49,34 @@ function FlipCard({ icon, title, text, bgImage }: any) {
         `}
       >
         {/* FRONT */}
-        <div className="absolute inset-0 flex flex-col justify-center bg-[#4f7fbd]/90 p-8 text-white md:p-10 backface-hidden">
-          <div className="mb-4">{icon}</div>
-          <h3 className="mb-3 text-xl font-semibold">{title}</h3>
-          <p className="text-sm max-w-md">{text}</p>
+        <div
+          className="absolute inset-0 bg-cover bg-center backface-hidden"
+          style={{ backgroundImage: `url(${frontImage})` }}
+        >
+          <div className="absolute inset-0 bg-[#4f7fbd]/80"></div>
+
+          <div className="relative z-10 flex h-full flex-col justify-center p-8 text-white md:p-10">
+            <div className="mb-4">{icon}</div>
+            <h3 className="mb-3 text-xl font-semibold">{title}</h3>
+            <p className="max-w-md text-sm">{text}</p>
+          </div>
         </div>
 
         {/* BACK */}
         <div
-          className="
-            absolute inset-0 flex flex-col justify-center bg-cover bg-center p-8 text-white
-            transform-[rotateX(180deg)] backface-hidden
-            md:p-10
-          "
-          style={{ backgroundImage: `url(${bgImage})` }}
+          className="absolute inset-0 bg-cover bg-center backface-hidden transform-[rotateX(180deg)]"
+          style={{ backgroundImage: `url(${backImage})` }}
         >
           <div className="absolute inset-0 bg-[#3a5f99]/85"></div>
 
-          <div className="relative z-10 text-center">
+          <div className="relative z-10 flex h-full flex-col justify-center p-8 text-center text-white md:p-10">
             <h3 className="mb-3 text-xl font-semibold">{title}</h3>
             <p className="mx-auto mb-6 max-w-md text-sm">{text}</p>
 
             <div className="flex justify-center">
               <button
                 className="border border-white px-6 py-2 text-sm transition hover:bg-white hover:text-[#3a5f99]"
-                onClick={(e) => e.stopPropagation()} // prevent re-flip
+                onClick={(e) => e.stopPropagation()}
               >
                 Know More
               </button>

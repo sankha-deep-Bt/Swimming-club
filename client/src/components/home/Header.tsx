@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 
 export default function Header() {
@@ -21,17 +22,18 @@ export default function Header() {
       <div className="relative z-10 flex h-full ">
         <div className="mx-auto w-full px-6">
           <div className="max-w-4xl md:ml-32 lg:ml-40">
-            <h1 className="mt-20 text-6xl font-bold leading-tight text-orange-400 md:text-9xl">
+            <h1 className="mt-40 text-6xl font-bold leading-tight text-orange-400 md:text-9xl">
               MIDNAPORE
               <br />
               SWIMMING
               <br />
               CLUB
             </h1>
-
-            <button className="mt-2 font-medium rounded-sm bg-orange-400 px-7 py-2 text-xs  text-black transition hover:bg-orange-400">
-              CONTACT US
-            </button>
+            <Link to="/contact">
+              <button className="mt-7 font-medium rounded-sm bg-orange-400 px-8 py-4 text-xs  text-black transition hover:bg-orange-400">
+                CONTACT US
+              </button>
+            </Link>
           </div>
         </div>
       </div>

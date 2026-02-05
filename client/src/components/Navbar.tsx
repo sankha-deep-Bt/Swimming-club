@@ -7,17 +7,17 @@ export default function Navbar() {
   const [facilitiesOpen, setFacilitiesOpen] = useState(false);
 
   return (
-    <header className="absolute top-0 left-0 z-50 w-full">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+    <header className="absolute top-0 left-0 z-50 w-full bg-amber-50">
+      <nav className="mx-auto flex max-w-8xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <img
           src="/logo.webp"
           alt="Midnapore Swimming Club"
-          className="h-12 w-12"
+          className="h-30 w-30"
         />
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-white">
+        <ul className="hidden md:flex items-center gap-8 text-xl font-medium text-blue">
           <li>
             <Link to="/" className="hover:text-cyan-300">
               Home
@@ -27,7 +27,7 @@ export default function Navbar() {
           {/* Facilities Dropdown */}
           <li className="relative group">
             <div className="flex cursor-pointer items-center gap-1 hover:text-cyan-300">
-              Our Facilities <ChevronDown size={14} />
+              Our Facilities <ChevronDown size={20} />
             </div>
 
             {/* Dropdown */}

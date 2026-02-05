@@ -1,32 +1,31 @@
 export default function GalleryPage() {
   const images = [
-    "/gallery-1.webp",
-    "/gallery-2.webp",
-    "/pool.webp",
-    "/gallery/4.webp",
-    "/gallery/5.webp",
-    "/gallery/6.webp",
-    "/gallery/7.webp",
-    "/gallery/8.webp",
-    "/gallery/9.webp",
-    "/gallery/10.webp",
-    "/gallery/11.webp",
-    "/gallery/12.webp",
-    "/gallery/13.webp",
-    "/gallery/14.webp",
-    "/gallery/15.webp",
-    "/gallery/16.webp",
-    "/gallery/17.webp",
-    "/gallery/18.webp",
-    "/gallery/19.webp",
-    "/gallery/20.webp",
+    "/gallery/gallery-1.webp",
+    "/gallery/gallery-2.webp",
+    "/gallery/gallery-3.JPG",
+    "/gallery/gallery-4.jpg",
+    "/gallery/gallery-5.jpg",
+    "/gallery/gallery-6.jpg",
+    "/gallery/gallery-7.jpeg",
+    "/gallery/gallery-8.jpeg",
+    "/gallery/gallery-9.jpeg",
+    "/gallery/gallery-10.jpeg",
+    "/gallery/gallery-11.jpeg",
+    "/gallery/gallery-12.jpeg",
+    "/gallery/gallery-13.jpeg",
+    "/gallery/gallery-14.jpeg",
+    "/gallery/gallery-15.jpeg",
+    "/gallery/gallery-16.jpeg",
+    "/gallery/gallery-17.jpeg",
+    "/gallery/gallery-18.jpeg",
+    "/gallery/gallery-19.jpeg",
   ];
 
   return (
     <section className="min-h-screen bg-[#eef9fa] py-16">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         {/* Masonry layout */}
-        <div className="columns-1 gap-4 sm:columns-2 md:columns-3 lg:columns-4">
+        <div className="mt-15 columns-1 gap-4 sm:columns-2 md:columns-3 lg:columns-3">
           {images.map((src, index) => (
             <div
               key={index}

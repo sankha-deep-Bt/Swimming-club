@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -14,13 +14,13 @@ export default function Footer() {
               className="w-70 mt-10"
             />
 
-            <p className="text-md mb-4 leading-relaxed">
+            <p className="text-xl mb-4 leading-relaxed">
               Address: Hospital Rd, Keranitola, Midnapore, West Bengal 721101
             </p>
 
-            <p className="text-md mb-4">Phone: 03222 297 741</p>
+            <p className="text-xl mb-4">Phone: 03222 297 741</p>
 
-            <p className="text-md">Email: info@midnaporeswimmingclub.org</p>
+            <p className="text-xl">Email: info@midnaporeswimmingclub.org</p>
           </div>
 
           {/* MIDDLE: Empty spacer (matches screenshot) */}
@@ -28,30 +28,71 @@ export default function Footer() {
 
           {/* RIGHT: Links */}
           <div className="md:text-left">
-            <ul className="space-y-1 text-sm">
-              <li>Home</li>
-              <li>Our Facilities</li>
-              <li>Notice Board</li>
-              <li>Gallery</li>
-              <li>Contact</li>
+            <h1 className="text-4xl font-bold mb-4">Quick Links</h1>
+            <ul className="space-y-1 text-3xl">
+              <Link to="/">
+                <li>Home</li>
+              </Link>
+              <Link to="/swimming">
+                <li>Swimming</li>
+              </Link>
+              <Link to="/gym">
+                <li>Gym</li>
+              </Link>
+              <Link to="/noticeboard">
+                <li>Notice Board</li>
+              </Link>
+              <Link to="/gallery">
+                <li>Gallery</li>
+              </Link>
+              <Link to="/contact">
+                <li>Contact</li>
+              </Link>
             </ul>
+            <div className="mt-20 flex flex-col md:flex-row items-center justify-between gap-6">
+              <SocialIcons />
+            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-20 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-sm">Copyright © 2026 Midnapore Swimming Club</p>
-
-          <div className="flex items-center gap-6 text-black">
-            <Facebook size={13} />
-            <h1>Facebook</h1>
-            <Instagram size={13} />
-            <h1>Instagram</h1>
-            <Youtube size={13} />
-            <h1>Youtube</h1>
-          </div>
         </div>
       </div>
     </footer>
   );
 }
+
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+  FaInstagram,
+  FaGoogle,
+  FaLinkedinIn,
+} from "react-icons/fa";
+
+export function SocialIcons() {
+  return (
+    <div className="flex gap-4 justify-center items-center">
+      <SocialButton color="bg-[#1877F2]" icon={<FaFacebookF />} />
+      <SocialButton color="bg-[#1DA1F2]" icon={<FaTwitter />} />
+      <SocialButton color="bg-[#FF0000]" icon={<FaYoutube />} />
+      <SocialButton color="bg-[#000000]" icon={<FaInstagram />} />
+      <SocialButton color="bg-[#6B7280]" icon={<FaGoogle />} />
+      <SocialButton color="bg-[#0A66C2]" icon={<FaLinkedinIn />} />
+    </div>
+  );
+}
+
+const SocialButton = ({ icon, color }: any) => {
+  return (
+    <div
+      className={`${color} w-14 h-14 rounded-xl flex items-center justify-center text-white text-2xl cursor-pointer
+      hover:scale-110 transition-transform duration-300 shadow-md`}
+    >
+      {icon}
+    </div>
+  );
+};

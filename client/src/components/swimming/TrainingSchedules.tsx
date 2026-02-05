@@ -37,7 +37,7 @@ export default function TrainingSchedules() {
           title="KIDS"
           subtitle="Afternoon"
           times={["03:45 PM To 04:15 PM"]}
-          image="/images/kids-afternoon.jpg"
+          image="/swim2.jpg"
         />
         <Card
           title="KIDS"
@@ -51,7 +51,7 @@ export default function TrainingSchedules() {
             "06:15 PM To 06:45 PM",
             "06:45 PM To 07:15 PM",
           ]}
-          image="/images/kids-evening.jpg"
+          image="/swim3.avif"
         />
       </div>
 
@@ -61,7 +61,7 @@ export default function TrainingSchedules() {
           title="SEASONAL MEMBER"
           subtitle="Afternoon"
           times={["03:45 PM To 04:15 PM", "04:15 PM To 04:45 PM"]}
-          image="/images/seasonal-afternoon.jpg"
+          image="/swim3.avif"
           height="h-[380px]"
         />
         <Card
@@ -74,7 +74,7 @@ export default function TrainingSchedules() {
             "06:15 PM To 06:45 PM",
             "06:45 PM To 07:15 PM",
           ]}
-          image="/images/seasonal-evening.jpg"
+          image="/swim4.avif"
           height="h-[380px]"
         />
         <Card
@@ -87,7 +87,7 @@ export default function TrainingSchedules() {
             "07:15 AM To 07:45 AM",
             "07:45 AM To 08:15 AM",
           ]}
-          image="/images/seasonal-morning.jpg"
+          image="/swim5.jpg"
           height="h-[380px]"
         />
       </div>
@@ -98,7 +98,7 @@ export default function TrainingSchedules() {
           title="ASSOCIATED MEMBER"
           subtitle="Afternoon"
           times={["03:45 PM To 04:15 PM", "04:15 PM To 04:45 PM"]}
-          image="/images/associate-afternoon.jpg"
+          image="/swim6.avif"
           height="h-[380px]"
         />
         <Card
@@ -111,7 +111,7 @@ export default function TrainingSchedules() {
             "06:15 PM To 06:45 PM",
             "06:45 PM To 07:15 PM",
           ]}
-          image="/images/associate-evening.jpg"
+          image="/swim7.jpg"
           height="h-[380px]"
         />
         <Card
@@ -124,7 +124,7 @@ export default function TrainingSchedules() {
             "07:15 AM To 07:45 AM",
             "07:45 AM To 08:15 AM",
           ]}
-          image="/images/associate-morning.jpg"
+          image="/swim8.avif"
           height="h-[380px]"
         />
       </div>
@@ -135,7 +135,7 @@ export default function TrainingSchedules() {
           title="GENERAL MEMBER"
           subtitle="Evening"
           times={["05:15 PM To 05:45 PM", "05:45 PM To 06:15 PM"]}
-          image="/images/general-evening.jpg"
+          image="swim2.jpg"
           height="h-[420px]"
         />
         <Card
@@ -148,7 +148,7 @@ export default function TrainingSchedules() {
             "07:15 AM To 07:45 AM",
             "07:45 AM To 08:15 AM",
           ]}
-          image="/images/general-morning.jpg"
+          image="/swimmingPool.jpg"
           height="h-[420px]"
         />
       </div>
@@ -159,14 +159,14 @@ export default function TrainingSchedules() {
           title="LADIES NIGHT"
           subtitle=""
           times={["07:45 PM To 08:15 PM"]}
-          image="/images/ladies-night.jpg"
+          image="/swim3.avif"
           height="h-[280px]"
         />
         <Card
           title="GENTS NIGHT"
           subtitle=""
           times={["08:30 PM To 09:00 PM", "09:00 PM To 09:30 PM"]}
-          image="/images/gents-night.jpg"
+          image="/swim4.avif"
           height="h-[280px]"
         />
       </div>
