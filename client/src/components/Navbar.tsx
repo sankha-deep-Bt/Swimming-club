@@ -2,12 +2,18 @@ import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({ variant }: { variant?: string }) {
   const [open, setOpen] = useState(false);
+
+  const isImageBg = variant === "image";
+
+  // const textColor = isImageBg ? "text-white" : "text-black";
+  // const hoverColor = isImageBg ? "hover:text-cyan-300" : "hover:text-blue-600";
+  // const mobileBg = isImageBg ? "bg-[#003d5b]/95" : "bg-white";
 
   return (
     <header className="absolute top-0 left-0 z-50 w-full">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img
@@ -18,7 +24,9 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav */}
-        <ul className="hidden items-center gap-8 text-sm font-medium text-white md:flex">
+        <ul
+          className={`hidden items-center gap-6 text-xs font-sm  md:flex ${isImageBg ? "text-white" : "text-black"}`}
+        >
           <Link to="/">
             <li className="cursor-pointer hover:text-cyan-300">Home</li>
           </Link>

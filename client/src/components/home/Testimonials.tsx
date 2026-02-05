@@ -1,6 +1,6 @@
 export default function Testimonial() {
   return (
-    <section className="relative h-162.5 w-full overflow-hidden">
+    <section className="relative h-100 w-full overflow-hidden">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -13,18 +13,18 @@ export default function Testimonial() {
       <div className="absolute inset-0 bg-[#3f4f63]/80" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6">
+      <div className="relative z-10 mx-auto flex h-full max-w-4xl items-center px-6">
         <div className="max-w-xl text-white">
-          <h2 className="mb-8 text-4xl font-extrabold uppercase leading-tight tracking-wide md:text-5xl">
+          <h2 className="mb-6 text-5xl font-medium uppercase leading-tight tracking-wide md:text-5xl">
             What People Say <br /> About Us
           </h2>
 
-          <span className="mb-6 block text-5xl text-teal-400">“</span>
+          <span className=" block text-5xl text-teal-400">“</span>
 
-          <p className="mb-10 text-sm leading-7 text-white/90 md:text-base">
-            Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
-            Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-            quis gravida magna mi a libero.
+          <p className="mb-8 text-xs font-medium leading-7 text-white/90 md:text-xs ">
+            Sed Fringilla Mauris Sit Amet Nibh. Donec Sodales Sagittis Magna.
+            Sed Consequat, Leo Eget Bibendum Sodales, Augue Velit Cursus Nunc,
+            Quis Gravida Magna Mi A Libero.
           </p>
 
           <div>

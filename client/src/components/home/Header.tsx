@@ -2,10 +2,11 @@ import Navbar from "../Navbar";
 
 export default function Header() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    // <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-[60vh] w-full overflow-hidden sm:h-screen">
       {/* Navbar */}
       <div className="relative z-20">
-        <Navbar />
+        <Navbar variant="image" />
       </div>
 
       {/* Background Image */}
@@ -18,10 +19,10 @@ export default function Header() {
       <div className="absolute inset-0 bg-[#003d5b]/70" />
 
       {/* Content */}
-      <div className="relative z-10 flex h-full items-center">
-        <div className="mx-auto w-full max-w-7xl px-6">
+      <div className="relative z-10 flex h-full ">
+        <div className="mx-auto w-full max-w-6xl px-6">
           <div className="max-w-xl md:ml-32 lg:ml-40">
-            <h1 className="text-5xl font-bold leading-tight text-orange-400 md:text-6xl">
+            <h1 className="mt-20 text-4xl font-bold leading-tight text-orange-400 md:text-8xl">
               MIDNAPORE
               <br />
               SWIMMING
@@ -29,7 +30,7 @@ export default function Header() {
               CLUB
             </h1>
 
-            <button className="mt-8 rounded-md bg-orange-500 px-6 py-3 text-sm font-semibold text-black transition hover:bg-orange-400">
+            <button className="mt-2 font-medium rounded-sm bg-orange-400 px-7 py-2 text-xs  text-black transition hover:bg-orange-400">
               CONTACT US
             </button>
           </div>
